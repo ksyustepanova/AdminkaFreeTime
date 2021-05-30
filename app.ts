@@ -1,5 +1,5 @@
 import express from 'express';
-
+import cors from 'cors';
 import * as winston from 'winston';
 import * as expressWinston from 'express-winston';
 import {Routes} from './services/routes';
@@ -9,7 +9,7 @@ const app: express.Application = express();
 const port = 3000;
 const routes: Array<Routes> = [];
 
-
+app.use(cors());
 app.use(express.json());
 
 
