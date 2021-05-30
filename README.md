@@ -1,0 +1,2 @@
+# AdminkaFreeTime
+I needed to make a service for changing the settings of different companies, which can only be done within the system, which cannot be given to the clients themselves. In order to study a new technology along with solving the problem, I chose Node.JS. I am using mssql and express to build Web API and work with MS SQL SERVER database. I dare say that this is my first project on Node.JS, so I cannot guarantee its quality.
