@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import * as winston from 'winston';
 import * as expressWinston from 'express-winston';
-import {Routes} from './services/routes';
-import {CompanyRoutes} from './controllers/company';
+import {Routes} from './src/services/routes';
+import {CompanyRoutes} from './src/controllers/company';
 
 const app: express.Application = express();
 const port = 3000;

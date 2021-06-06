@@ -1,7 +1,6 @@
 import {Routes} from '../services/routes';
 import express from 'express';
 import {Company} from '../repositories/company.repository';
-import {CompanyPutModel} from '../models/company.put.model';
 
 export class CompanyRoutes extends Routes {
     constructor(app: express.Application) {
