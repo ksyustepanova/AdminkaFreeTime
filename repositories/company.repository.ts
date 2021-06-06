@@ -23,7 +23,7 @@ export class Company extends Connection{
         try {
             await this._pool.connect();
             let result = await this._pool.request()
-                .execute('spSelectCompany')
+                .execute('spSelectCompanyForAdminka')
             await this._pool.close();
             return(result.recordset);
         } catch (err) {
@@ -84,7 +84,7 @@ export class Company extends Connection{
                 .input('is_sending_mention_sms_new', sql.Bit, company.is_sending_mention_sms_new)
                 .input('is_cache_entry', sql.Bit, company.is_cache_entry)
                 .input('is_white_list', sql.Bit, company.is_white_list)
-                .execute('spUpdateCompany')
+                .execute('spUpdateCompanyForAdminka')
             await this._pool.close();
             return(result.recordset);
         } catch (err) {
